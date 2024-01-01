@@ -1,0 +1,71 @@
+/* CSS Boiler Plate  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+/* Setting up Height and width of the div */
+.box{
+    height: 200px;
+    width: 300px;
+
+}
+.box h1{
+    font-size: 4rem;
+    /* rem depends on the root element so 10px * 4 = 40px */
+}
+
+/* Color and background-color  */
+
+/* Color = Text color  */
+/* background-color = color of the background  */
+.box{
+    background-color: rgb(53, 74, 111);
+    color: white;
+}
+
+/* Different CSS units - px , vw,vh, %, em, rem  */
+/* px is based on the screen quality ,it dont adjust according to screen size */
+/* %, vh and vw adjust themself as per the screen size  */
+/* em is dependent on the size of the parent element while rem is dependent on the root element  */
+
+.box2{
+    min-width: 50%; /** the width of the div will be atleast 50%**/
+    height: 20vh;
+    background-color: aquamarine;
+    font-size: 22px;
+
+    /* types of the borders  */
+
+
+    border: 2px solid black;
+    /* border: 2px dashed black;
+    border: 2px double black; */
+}
+.box2 h2{
+    font-size: 2em;  /**22 * 2 = 44px**/ 
+}
+p{
+    font-size: 2rem;
+    /* spacebetween the lines  */
+    line-height: 15px; 
+
+    /* text-align */
+    text-align: center;
+    /* text-align: left;
+    text-align: right; */
+}
+
+/* margin and padding  */
+/* margin - space outside of the element  */
+/* padding - space inside of the element  */
+.box2{
+    margin: 10px; /** this indicated space of 10px all the sides**/
+    margin: 12px 20px 40px 2px; /**(top,right, bottom , left)**/
+    padding: 20px;
+}

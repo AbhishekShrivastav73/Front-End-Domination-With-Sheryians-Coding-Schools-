@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property and beyond</title>
+    <style>
+        p{
+            /* iski vajah se ye width change nhi krga  */
+            display: inline; 
+        }
+        span{
+            display: block;
+        }
+        .box1{
+            background-color: red;
+            width: 500px;
+            height: 200px;
+            position: relative; /**sets pposition according to the parent element**/
+
+        }
+        .box1 div{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .box2{
+            background-color: rgb(34, 112, 69);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+        .box3{
+            /* background : linear-gradient(to right, color1, color2); */
+            background: linear-gradient(to right bottom, red,yellow,green);
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            right: 0;
+        }
+        .img{
+            height: 500px;
+            width: 500px;
+            background: url(https://images.unsplash.com/photo-1698106828998-787ee1cc115c?q=80&w=2008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-position: center;
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+<body>
+        <!-- DISPLAY PROPERTIES  -->
+
+
+    <!-- inline and block element  -->
+    <!-- inline element allow krte h koi dusre element ko side me aane k liye  -->
+    <!-- block element allow nahi karta hai koi bhi elem ko side me aane k liye  -->
+
+
+    <!-- inline elem apni width ko change karne k liye allow nahi karta hai  -->
+    <!-- agr humko karna hai change to inline-block krna pdega  -->
+    <p>12</p>
+    <p>23</p>
+    <span>sheryians</span>
+    <span>coding </span>
+    <span>school</span>
+
+    <div class="box1">
+        <div></div>
+    </div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <div class="img"></div>
+    
+</body>
+</html>

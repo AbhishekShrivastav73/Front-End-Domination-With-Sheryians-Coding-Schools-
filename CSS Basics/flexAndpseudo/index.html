@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and pseudo elements</title>
+    <style>
+        #main{
+            width: 500px;
+            height:500px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(108, 17, 150);
+        }
+        .box3{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(23, 126, 139);
+        }
+        h1{
+            position: relative;
+            width: fit-content;
+        }
+        h1::before{
+            content: '';
+            width: 100%;
+            background-color: aqua;
+            height: 10%;
+            position: absolute;
+            bottom: 0;
+        }
+        h2::first-line{
+            color: red;
+        }
+        h2::first-letter{
+            font-size: 5vw;
+        }
+        h2::selection{
+            color: green;
+        }
+        h2:hover{
+            color: grey;
+        }
+        /* active tb use hota hai jb koi element selected ho  */
+        button:active{
+            background-color: gray;
+
+        }
+        /* jab usme kaam horha ho  */
+        input:focus{
+            background-color: yellow;
+            color: rgb(207, 57, 57);
+        }
+        #main div:nth-child(2n){
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <!-- flex property mainly chizo ko agal bagal laane me help krti hai  -->
+    <!-- aur control dedti h elements k upar  -->
+
+    <!-- flex property se do axis enable hojaata hai x-axis and y-axis  -->
+    <!-- flex ki direction btaegi kon main axis hai  -->
+    <!-- x-axis --- main axis (justify-content in default case) -->
+    <!-- y axis --- cross axis (align item in default case) -->
+
+    <div id="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+
+    </div>
+    <h1>Hello World!</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae dolorem praesentium, illum eaque sit, magni, placeat quaerat soluta asperiores enim! Ad nobis delectus non deleniti, odio nostrum quaerat illum itaque praesentium in rem mollitia modi, magni voluptas repudiandae similique aperiam consequatur inventore. Voluptatem, libero.</h2>
+    <button>Explore
+
+    </button>
+    <input type="text" name="" id="">
+</body>
+</html>
