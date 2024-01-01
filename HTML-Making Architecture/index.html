@@ -1,0 +1,127 @@
+<!-- Boiler Plate  -->
+<!DOCTYPE html>  <!-- Signifies HTML5 aur ye bhi btata hai ki ye html Document hai -->
+<html lang="en"> <!--Wraps head and Body Tags-->
+<head> <!--Icludes Insrtuctions (Plugins,Settings,etc) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Title</title> <!--Describes the Title of the Website-->
+
+    <style>
+        #red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--Body Includes the Content of the Wesite-->
+
+    <!--Heading Tag-->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!--Paragrapgh Tag-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, ut.</p>
+    <!-- To Create Bold Elemment -->
+    <b>Bold Item</b>
+    <!-- Italic -->
+    <i>This is italic</i>
+
+    <!-- Subscript(<sub>) And Superscript(<sup>)  -->
+
+    <p>H <sub>2</sub>O </p>
+    <p>a <sup>2</sup>+ b <sup>2</sup></p>
+
+    <!-- break(<br>) -Element Dusri Line par aajaega -->
+    <!-- horizontal Row (<hr>) -Inserts the line in between Elements -->
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Quaerat necessitatibus quasi similique tempore. Aspernatur saepe voluptates facilis, qui vero cum.</p>
+    <hr>
+
+
+    <!-- List  -->
+
+    <!-- Ordered List  -->
+
+    <ol>
+        <li>This is Ordered List</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        
+    </ol>
+
+    <ul>
+        <li>This is Unordered List</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Anchor tag  -->
+    <!-- Creates a Link (Link URL is Added to Href Attribute) -->
+
+    <a href="https://www.youtube.com/" target="_blank">Click To Open Youtube</a>
+
+    <!-- Image Tag  -->
+    <!-- src shows the Source or Link of the Image  -->
+    <!-- alt -- is shown when there is some Problem in loading the Image  -->
+
+
+    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="This is an Image">
+
+    <hr>
+    <form action="">
+        <!-- form includes Inputs  -->
+
+        <!-- "for" aur 'input tag' me "id" same rakh do...to label par click krne se input activate hojaega -->
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <br><br>
+        <label for="checkbox">Check Box</label>
+        <input type="checkbox" id="checkbox">
+        <br><br>
+        <label for="gender">Gender</label>
+        <input name="gender" type="radio">Male
+        <input name="gender" type="radio">Female
+        <input name="gender" type="radio">trans
+
+        <br><br>
+        <input type="file">
+        <br><br>
+        <input type="range">
+        <br><br>
+        <input type="date">
+        <br><br>
+        <input type="color">
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <!-- Understanding Div ID and Classes  -->
+
+    <!-- div is a Box (Rectangular in shape) -->
+    <!-- div ek rectangular box hai jo width deta hai par koi Height nahi deta  -->
+
+    <div>
+        <p>Div me hum multiple Elements Ek sath rakh skte hai</p>
+    </div>
+    <!-- id help krta hai individual item ko target krne k liye  -->
+    <p id="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dicta! Alias, numquam iure accusamus molestias veritatis reprehenderit itaque, corrupti optio doloremque praesentium explicabo? Dolor quos suscipit doloribus porro tenetur nemo!</p>
+    <p class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dicta! Alias, numquam iure accusamus molestias veritatis reprehenderit itaque, corrupti optio doloremque praesentium explicabo? Dolor quos suscipit doloribus porro tenetur nemo!</p>
+</body>
+</html>
