@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 1.5vw;
+    background-color: aliceblue;
+}
+nav .links a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-weight: 500;
+}
+header{
+    padding: 2vw 1.5vw;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1{
+    font-size: 4vw;
+
+}
+header button{
+    background-color: aquamarine;
+    border: none;
+    padding: 15px;
+    font-weight: 800;
+    font-size: 1.4vw;
+    max-width: 19vw;
+    border-radius: 20px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 1.5vw;
+}
+section h2{
+    font-size: 4vw;
+    text-align: center;
+  
+}
+article{
+    width: 25%;
+    background-color: aquamarine;
+    height: 60%;
+    padding: 2vw;
+}
+article h3{
+    font-size: 2.5vw;
+
+}
+article p{
+    font-size: 2vw;
+}
+aside{
+    background-color: aquamarine;
+    max-width: 10vw;
+    font-size: 2.5vw;
+    padding: 20px;
+    border-radius: 20px;
+    position: fixed;
+    right: 1.2%;
+    top: 85%;
+}
