@@ -13,6 +13,9 @@ Embark on the HTML adventure! This video introduces you to the building blocks o
  - HTMl level 1 Craft a robust coding foundation with HTML! This video guides you through the essentials, ensuring you build a sturdy base for your web development journey. From tags to structure, master the art of creating solid HTML structures.
  - HTML Level 2 Dive into HTML mastery! This video breaks down the magic of HTML tags. Unlock the power of these building blocks, understanding how each tag contributes to the creation of dynamic and structured web content.
 
+# CSS Basics - Styling things UP
+CSS, or Cascading Style Sheets, is the language used to control the presentation and layout of web pages. It allows you to define the visual style of HTML elements, including fonts, colors, spacing, and more.
+
 # HTML-5: Semantic
 Demystifying HTML5 Semantic Elements! Learn what they are and how to wield them effectively. This video offers insights into utilizing HTML5 Semantic Elements to enhance website
 structure and accessibility.
