@@ -19,3 +19,6 @@ structure and accessibility.
 
 # CSS Basics - Styling things UP
 CSS, or Cascading Style Sheets, is the language used to control the presentation and layout of web pages. It allows you to define the visual style of HTML elements, including fonts, colors, spacing, and more.
+
+# CSS Grid Layout
+Uncover the power of layout design! Dive into 'CSS Grid: A Complete Guide to CSS Grid' and master the art of creating dynamic, responsive layouts. Explore the versatility of CSS Grid for modern web design.
