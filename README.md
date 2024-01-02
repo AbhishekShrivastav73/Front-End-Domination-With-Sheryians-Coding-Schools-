@@ -22,3 +22,7 @@ CSS, or Cascading Style Sheets, is the language used to control the presentation
 
 # CSS Grid Layout
 Uncover the power of layout design! Dive into 'CSS Grid: A Complete Guide to CSS Grid' and master the art of creating dynamic, responsive layouts. Explore the versatility of CSS Grid for modern web design.
+
+# Navbar using Grid Property
+<img width="960" alt="Screenshot 2024-01-02 223538" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/d87ac1a2-6315-464c-9e0f-48c0fd2a29e9">
+
