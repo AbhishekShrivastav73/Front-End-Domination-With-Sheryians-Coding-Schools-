@@ -26,3 +26,8 @@ Uncover the power of layout design! Dive into 'CSS Grid: A Complete Guide to CSS
 # Navbar using Grid Property
 <img width="960" alt="Screenshot 2024-01-02 223538" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/d87ac1a2-6315-464c-9e0f-48c0fd2a29e9">
 
+# CSS Projects - Elevate your designing skills
+
+<img width="946" alt="Screenshot 2024-01-04 164542" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/d9b6c141-4781-449f-ab65-211f87daede7">
+
+
