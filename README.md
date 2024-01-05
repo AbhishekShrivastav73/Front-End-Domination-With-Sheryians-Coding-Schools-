@@ -33,6 +33,8 @@ Uncover the power of layout design! Dive into 'CSS Grid: A Complete Guide to CSS
 # Project-2
 Project Link  - https://in.pinterest.com/pin/825214331746058643/feedback/?invite_code=689163d3868f4d64a87a3871664a5557&sender_id=825214469129958622
 
+<img width="943" alt="Screenshot 2024-01-05 222854" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/7fce72a2-8cd2-4ddc-ab6b-3027e1a38c81">
+
 # Project-3
 Project Link - https://in.pinterest.com/pin/825214331745736027/feedback/?invite_code=eeb26c2039134ae9bcddc4c5d10d622a&sender_id=825214469129958622
 
