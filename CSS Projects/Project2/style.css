@@ -1,0 +1,196 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body,html {
+  font-family: 'Arial', sans-serif;
+  height : 100%;
+  width: 100%;
+}
+
+/* Add your own styles below this line */
+main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(182, 146, 215); */
+    display: flex;
+    padding: 5vw 4vw 0 8vw;
+}
+.left{
+    width: 50%;
+    /* height: 100vh; */
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1.8vw;
+}
+
+.left h1{
+    font-size: 8vw;
+    font-weight: 100;
+}
+.color{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 30px;
+    gap: 5px;
+}
+.left #content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+.color p{
+    font-size: 1.5vw;
+    margin-right: 12px;
+}
+.brown{
+    width: 18px;
+    height: 18px;
+    background-color: #7B6651;
+    border-radius: 50%;
+}
+.black{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+}
+.details h2{
+    font-size: 2.2vw;
+    margin: 10px 0;
+}
+.details p{
+    width: 55%;
+}
+
+/* .....Right Section  */
+.right{
+    /* background-color: rgb(64, 141, 115); */
+    width: 30%;
+    /* height: 100vh; */
+    padding-top: 4.5vw;
+    /* padding-right: 12vw; */
+    position: relative;
+}
+.ranking{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px 0 0;
+    margin-bottom: 10px;
+}
+.ranking h4{
+    font-size: 2vw;
+    font-weight: 200;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+}
+.ratings h6{
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+.ratings i{
+    color: goldenrod;
+}
+.container{
+    display: flex;
+}
+.text{
+    /* background-color: red; */
+    width: 10%;
+    height: 76vh;
+}
+.text h5{
+    transform: rotate(-90deg);
+}
+.img{
+    width: 100%;
+    height: 75vh;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 10vw;
+    height: 20vh;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    right: -19%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rotated{
+    /* color: red; */
+    rotate: -90deg;
+    position: absolute;
+    bottom: 18%;
+    left: -36%;
+    font-size: 2vw;
+    font-weight: 300;
+}
+@media (max-width : 600px ) {
+    main{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left h1{
+        font-size: 22vw;
+    }
+    .color p{
+        font-size: 4vw;
+    }
+    .color{
+        margin-top: 2vw;
+    }
+    .details h2{
+        font-size: 5vw;
+    }
+    .details p{
+        width: 70%;
+    }
+    .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        gap: 10px;
+    }
+    .box{
+        right: 0%;
+        width: 80px;
+        height: 80px;
+        font-size: 4vw;
+        top: 10%;
+    }
+    #rotated{
+       font-size: 10vw;
+       top: -7%;
+       left: 1%;
+       rotate: 0deg;
+    }
+    .img{
+        width: 90%;
+    }
+    .ranking h4, .ranking h6{
+        font-size: 5vw;
+    }
+}
