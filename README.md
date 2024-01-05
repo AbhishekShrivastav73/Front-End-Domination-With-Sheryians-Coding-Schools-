@@ -29,5 +29,14 @@ Uncover the power of layout design! Dive into 'CSS Grid: A Complete Guide to CSS
 # CSS Projects - Elevate your designing skills
 # Project-1
 <img width="946" alt="Screenshot 2024-01-04 164542" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/d9b6c141-4781-449f-ab65-211f87daede7">
+ 
+# Project-2
+Project Link  - https://in.pinterest.com/pin/825214331746058643/feedback/?invite_code=689163d3868f4d64a87a3871664a5557&sender_id=825214469129958622
+
+# Project-3
+Project Link - https://in.pinterest.com/pin/825214331745736027/feedback/?invite_code=eeb26c2039134ae9bcddc4c5d10d622a&sender_id=825214469129958622
+
+<img width="960" alt="Screenshot 2024-01-05 222638" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/e3aeb6e6-42a5-434c-b826-36f024930f9c">
+
 
 
