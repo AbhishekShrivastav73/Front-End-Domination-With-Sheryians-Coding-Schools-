@@ -40,5 +40,27 @@ Project Link - https://in.pinterest.com/pin/825214331745736027/feedback/?invite_
 
 <img width="960" alt="Screenshot 2024-01-05 222638" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/e3aeb6e6-42a5-434c-b826-36f024930f9c">
 
+# Responsive Web Development
+Responsive web development is all about creating websites that adapt to various screen sizes and devices. In this topic, you'll get a fundamental introduction to the principles and techniques behind building web pages that look great on everything from large desktop monitors to tiny mobile screens.
+
+## Responsive website using HTML and CSS
+
+--> Understanding Units - px - % - vw,vh - vmax,vmin - em,rem
+
+--> Layout of website - absolute vs flex
+
+--> flexbox - Display flex - aligning items in x and y axis - flex direction - flex wrap
+
+--> CSS Media Queries - min height, min width - min width, max width
+
+--> Key points to keep in mind to make website responsive
+
+CSS flexbox
+CSS Units
+Responsive Typography
+Mobile-First Approach
+Flexible Images and Media
+Practice! Practice! Practice!
+
 
 
