@@ -61,6 +61,8 @@ Responsive Typography
 Mobile-First Approach
 Flexible Images and Media
 Practice! Practice! Practice!!
+# CSS Animations : Styling things Up
+Unlock the world of captivating web design! Dive into 'Introduction to CSS Animations' and discover the magic of breathing life into your websites. Learn the basics of CSS animations, from transitions to keyframes, and embark on a journey to create visually stunning and dynamic web experiences!
 
 
 
