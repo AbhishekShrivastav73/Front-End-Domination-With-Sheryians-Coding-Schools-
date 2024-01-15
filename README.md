@@ -65,4 +65,8 @@ Practice! Practice! Practice!!
 Unlock the world of captivating web design! Dive into 'Introduction to CSS Animations' and discover the magic of breathing life into your websites. Learn the basics of CSS animations, from transitions to keyframes, and embark on a journey to create visually stunning and dynamic web experiences!
 
 
+# Created by Abhishek Shrivastav
+# Mentor - Harsh Sharma
+
+
 
