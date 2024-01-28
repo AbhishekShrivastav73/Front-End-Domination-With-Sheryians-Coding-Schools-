@@ -1,0 +1,577 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body,html {
+  font-family: 'Arial', sans-serif;
+  height : 100%;
+  width: 100%;
+}
+/* Add your own styles below this line */
+main{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 0.1px;
+    position: relative;
+    background-color: #F8F8F8;
+}
+main nav{
+    width: 100%;
+    height: 12vh;
+    border-top: 2px solid black;
+    margin-top: 35px;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    width: 23%;
+    font-family: monument;
+    font-weight: 800;
+    font-size: 2.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -3px;
+    height: 100%;  
+    position: relative; 
+}
+nav h3{
+    display: none;
+}
+nav h1::after{
+    content: '©️';
+    font-family: sans-serif;
+    position: absolute;
+    right: 13%;
+    font-size: 1.8vw;
+    top: 0;
+}
+nav h1::before{
+    content: "model management";
+    font-family: sans-serif;
+    bottom: 5%;
+    position: absolute;
+    font-size: 1vw;
+    letter-spacing: 0;
+    font-weight: 400;
+    right: 20%;
+    color: rgb(76, 76, 76);
+}
+nav h2{
+    width: 20%;
+    font-size: 1.4vw;
+    font-weight: 600;
+    border-right: 2px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav h2:last-child{
+    width: 10%;
+    border-right: none;
+}
+nav h2:nth-child(4){
+    width: 24%;
+}
+section{
+    height: 96vh;
+    width: 100%;
+    padding: 3.4vw 6vw;
+    position: relative;
+}
+section .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section .container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 13, 63, 0.135);
+    /* backdrop-filter: blur(2px); */
+    position: absolute;
+    bottom: 0;
+    padding: 2vw 3vw;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.overlay .title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: monument;
+}
+.overlay .title h1{
+    font-weight: 600;
+    font-size: 4.5vw;
+}
+.overlay .title h2{
+    border: 1px solid white;
+    padding: 2vw 2.2vw;
+    border-radius: 50%;
+    font-size: 2.5;
+    font-weight: 200;
+}
+.overlay .foot{
+    border-top: 2px solid white;
+    padding-top: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.overlay .foot h3{
+    font-size: 2vw;
+    font-weight: 400;
+}
+#scroll{
+    width: 100%;
+    height: 30vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 2vw;
+}
+#scroll img{
+    width: 10vw;
+    border-radius: 50%;
+    height: 20vh;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 3.2vw;
+}
+#scroll .scrollContainer{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    animation: animations 10s linear infinite;
+}
+@keyframes animations {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#alpha{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alpha h5{
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-style: italic;
+}
+#alpha h4{
+    font-size: 2vw;
+    text-decoration: underline;
+    font-style: italic;
+}
+#alpha h5:nth-child(7){
+    border: 1.5px solid black;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+#alpha h5:nth-child(8n){
+    color: gray;
+}
+.page2{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    padding: 4vw 6vw 0 6vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.page2 #left{
+    width: 55%;
+    height: 100%;
+}
+.page2 #left img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: center;
+}
+.page2 #right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page2 #left h3{
+    font-size: 2.7vw;
+    font-weight: 900;
+    font-family: monument;
+}
+.page2 #right img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
+.page2 #right .content{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+.page2 #right .content h5{
+    width: 52%;
+    font-size: 1.7vw;
+}
+.page2 #right .content h6{
+    font-size:1.1vw;
+    width: 40%;
+    font-weight: 100;
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 2vw 6vw 2vw 6vw;
+    align-items: center;
+    justify-content: space-between;
+}
+#page3 .circularText{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#page3 .imgContainer{
+    height: 100%;
+    width: 58%;
+    background-color: aqua;
+    background-image: url(https://images.unsplash.com/photo-1498746607408-1e56960e3bdd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#page3 .circularText .images{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page3 .circularText .images .circleAnimation{
+    animation: anime 10s linear  infinite;
+    mix-blend-mode: multiply;
+}
+#page3 .circularText .images .arrows{
+    position: absolute;
+    mix-blend-mode: difference;
+}
+@keyframes anime {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#page3 .circularText .textContainer h6{
+    font-size: 1.8vw;
+    font-weight: 100;
+}
+.imgSection{
+    width: 100%;
+    height: 100vh;
+    padding: 3vw 6vw;
+}
+.imgSection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#updateSection{
+    width: 100%;
+    height: 100vh;
+    padding: 3vw 6vw;
+}
+#updateSection>h1{
+    font-family: monument;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+}
+#updateSection .elem{
+    width: 100%;
+    height: 16vh;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 2vw;
+    transition: all ease 0.5s;
+}
+#updateSection .elem img{
+    position: absolute;
+    left: -12%;
+    width: 18vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20%;
+    opacity: 0;
+    transition: all ease 0.3s;
+    z-index: 99;
+}
+#updateSection .elem:hover img{
+    opacity: 1;
+    left: 18%;
+}
+#updateSection .elem:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#updateSection .elem:last-child{
+    border-bottom: 2px solid black;
+}
+#updateSection .elem .elemContainer{
+    width: 50%;
+}
+#updateSection .elem h5{
+    width: 6%;
+    font-weight: 200;
+}
+#updateSection .elem .elemContainer h2{
+    font-weight: 400;
+}
+#updateSection .elem .elemContainer p{
+    font-size: 0.8vw;
+}
+#movieShot{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+#movieShot .movie-left{
+    width: 45%;
+    height: 100%;
+    background-color: yellow;
+    background-image: url(https://plus.unsplash.com/premium_photo-1669704098750-7cd22c35422b?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#movieShot .movie-content{
+    width: 55%;
+    height: 100%;
+}
+#movieShot .movie-content .text{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom:1.2vw ;
+}
+#movieShot .movie-content .text h1{
+    font-family: monument;
+    font-size: 2.8vw;
+}
+#movieShot .movie-content .text h4{
+    width: 60%;
+    font-size: 2vw;
+    font-weight: 400;
+}
+#movieShot .movie-content .text {
+    font-size: 1.1vw;
+}
+.movie-img{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 1vw;
+}
+.movie-img .left-img{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1579493934830-eab45746b51b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: 0 20%;
+    background-size: cover;
+}
+.movie-img .right-img{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1613498382159-0972b7b4c9f1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: 0 20%;
+    background-size: cover;
+}
+#marquee{
+    width: 100%;
+    height: 14vh;
+    padding: 1vw;
+    display: flex;
+    overflow: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#marquee .marqueeContainer h4{
+    font-size: 4vw;
+    font-family: monument;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    color: transparent;   
+    display: inline-block;
+    margin-left: 20px;
+}
+#marquee .marqueeContainer{
+    width: fit-content;
+    display: inline-block;
+    white-space: nowrap;
+    animation: anima 20s linear infinite;
+
+}
+@keyframes anima {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#blog{
+    width: 100%;
+    height: 100vh;
+    padding: 4vw 6vw;
+}
+.blogContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 4vw;
+    padding: 1vw;
+}
+.blogContainer h3{
+    font-family: monument;
+    font-size: 3vw;
+}
+.blog{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.blog p{ 
+    font-size: 2vw;
+}
+.blog p span{
+    border: 1px solid black;
+    padding: 3px 9px;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: justify;
+}
+.blog img{
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    object-position: 0 20%;
+
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    border-top: 2px solid black;
+    margin-top: 35px;
+    border-bottom: 2px solid black;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+footer h1{
+    width: 30%;
+    padding: 2vw 6vw;
+    font-family: monument;
+    position: relative;
+} 
+footer h2:nth-child(2){
+    width: 20%;
+    padding: 2vw 6vw;
+    border-right: 2px solid black;
+    font-weight: 400;
+    text-align: center;
+}
+footer h2:nth-child(3){
+    width: 20%;
+    padding: 2vw 2vw;
+    border-right: 2px solid black;
+    font-weight: 400;
+    text-align: center;
+}
+footer div{
+    width: 30%;
+}
+footer div h2{
+    border-bottom: 2px solid black;
+    /* margin-top: 2vw;      */
+    padding: 2vw;
+    font-weight: 400;
+    text-align: center;
+}
+footer div p{
+    /* padding: 2vw; */
+    padding-top: 1vw;
+    /* padding-left: 3vw; */
+}
+footer h1::after{
+    content: '©️';
+    font-family: sans-serif;
+    position: absolute;
+    right: 30%;
+    font-size: 1.8vw;
+    top: 10%;
+}
+footer h1::before{
+    content: "model management";
+    font-family: sans-serif;
+    top: 25%;
+    position: absolute;
+    font-size: 1vw;
+    letter-spacing: 0;
+    font-weight: 400;
+    right: 35%;
+    color: rgb(76, 76, 76);
+}
+.icons{
+    width: 100%;
+    padding-left: 3vw;
+    margin-top: 1vw;
+}
+.icons i{
+    font-size: 1.7vw;
+    margin-right: 1vw;
+}
