@@ -65,6 +65,13 @@ Practice! Practice! Practice!!
 Unlock the world of captivating web design! Dive into 'Introduction to CSS Animations' and discover the magic of breathing life into your websites. Learn the basics of CSS animations, from transitions to keyframes, and embark on a journey to create visually stunning and dynamic web experiences!
 
 # CSS Responsive Project 
+The CSS Responsive Project is a hands-on exploration of creating a responsive web project. In this introduction, you'll get an overview of what to expect in this project and the importance of making web content adaptable to various screen sizes.
+
+# CSS Bonus Projects
+Unlock creativity in action! Discover 'Introduction to CSS Bonus Project' and embark on a hands-on journey. Elevate your skills by diving into this project, applying foundational CSS knowledge to create a captivating web masterpiece.
+
+# Tailwind CSS
+Master Tailwind CSS in a single session! Dive into a comprehensive guide covering the entire spectrum of Tailwind CSS. Elevate your skills and streamline your workflow with this powerful utility-first framework.
 
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
