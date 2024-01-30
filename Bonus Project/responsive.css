@@ -1,0 +1,174 @@
+@media (max-width:750px) {
+    footer{
+        justify-content: start;
+        gap: 3vw;
+    }
+    .footer-part1, .footer-part2{
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .footer-part1 div a{
+        font-size: 2vw;
+    }
+    .footer-part2 div{
+        font-size: 2vw;
+    }
+}
+@media (max-width : 809px) {
+    section .box{
+        width: 43%;
+        flex-shrink: 0;
+        height: 40vw;
+    }
+    section div{
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section .box .boxFooter p{
+        font-size: 1.9vw;
+    }
+    .boxFooter i{
+        font-size: 1.3vw;
+    }
+    .hero h2{
+        font-size: 2vw;
+    }
+    .hero h1{
+        font-size: 8vw;
+        line-height: 7vw;
+    }
+    .hero p{
+        font-size: 2vw;
+    }
+    .links a{
+        display: none;
+    }
+    .links i{
+        display: block;
+        font-size: 3vw;
+    }
+}
+@media (max-width:600px) {
+    .heroContainer nav{
+        height: 13vh;
+    }
+    .signUps input{
+        display: none;
+    }  
+    .links img{
+        height: 9vw;
+    } 
+    #signIn{
+        font-size: 2vw;
+        border-radius: 5vw;
+        padding: 3vw 4vw;
+    }
+    .hero{
+        padding: 0;
+        /* justify-content: space-between; */
+    }
+    .hero h1{
+        font-size: 12vw;
+        width: 70%;
+        line-height: 12vw;
+    }
+    .overlay{
+        height: 20%;
+    }
+    .hero p{
+        font-size: 3vw;
+        width: 70%;
+    }
+    .scroller{
+        height: 40vh;
+    }
+    section h2{
+        font-size: 7vw;
+        margin-top: 6vw;
+    }
+    .scroller .elem{
+        width: 50vw;
+    }
+    section .box{
+        width: 100%;
+        height: 70vw;
+    }
+    .hover{
+        height: 20%;
+
+    }
+    section .box .boxFooter img{
+        width: 6vw;
+    }
+    .boxFooter i{
+        font-size: 3vw;
+    }
+    section .box .boxFooter p{
+        font-size: 3vw;
+    }
+    #pro{
+        font-size: 2vw;
+    }
+    #explore{
+        font-size: 3vw;
+        padding: 3vw 4vw;
+        border-radius: 5vw;
+    }
+    .join h2{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    .join{
+        height: fit-content;
+        gap: 9vw;
+        padding: 10vw 0;
+    }
+    .join p{
+        font-size: 4.2vw;
+        line-height: 7vw;
+    }
+    .join .btns button{
+        width: 42vw;
+        height: 13vw;
+        border-radius: 7vw;
+        font-size: 3vw;
+    }
+    .join h6{
+        font-size: 5vw;
+    }
+    footer{
+        height: fit-content;
+    }
+    .footerScroller{
+        height: 20vh;
+    }
+    .footer-part1 div a{
+        font-size: 3vw;
+    }
+    .footer-part1 img{
+        height: 12vw;
+    }
+    .footer-part1 .icons i{
+        font-size: 4vw;
+    }
+   
+}
+@media (max-width : 400px) {
+    .hero h2{
+        font-size: 4vw;
+    }
+    .hero{
+        gap: 8vw;
+    }
+    .hero h1{
+        font-size: 17vw;
+        width: 90%;
+        line-height: 15vw;
+    }
+    .hero p{
+        font-size: 5vw;
+    }
+}

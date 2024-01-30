@@ -1,0 +1,424 @@
+/* CSS Reset */
+@font-face {
+  font-family: heading;
+  src: url(./vEFF2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6kDXr4.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body,html {
+  font-family: 'Arial', sans-serif;
+  height : 100%;
+  width: 100%;
+  background-color: #F8F7F4;
+}
+main::selection{
+  color: red;
+}
+
+/* Add your own styles below this line */
+main{
+  width: 100%;
+
+}
+/* .....HeroContainer .....  */
+.heroContainer{
+  width: 100%;
+  height: 100vh;
+}
+/* ......navbar ......  */
+.heroContainer nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 16.8vh;
+  padding: 0 3.4vw;
+}
+.heroContainer nav .links a{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1vw;
+}
+.links{
+  /* width: 35%; */
+  display: flex;
+  gap: 2.5vw; 
+  align-items: center;
+  justify-content: center;
+
+}
+.signUps{
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.links img{
+  /* width: 7vw; */
+  height: 4vw;
+  margin-top: -10px;
+}
+#Login{
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+#signIn{
+  background-color: #0D0C22;
+  color: white;
+  font-size: 1.1vw;
+  font-weight: 600;
+  padding: 1.3vw 2vw;
+  outline: none;
+  border: none;
+  border-radius: 2vw;
+}
+.signUps input{
+  padding: 1.3vw 2vw;
+  border-radius: 2vw;
+  border: none;
+  background-color: #FFFFFF;
+}
+.links i{
+  display: none;
+}
+
+/* .......Hero section .....  */
+.hero{
+  width: 100%;
+  height: calc(100% - 16.8vh);
+  /* background-color: cadetblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3vw;
+  padding: 3vw 0 0 0;
+}
+.hero h2{
+  background-color: #FFDA7A;
+  padding: 0.7vw 1.6vw;
+  border-radius: 2vw;
+  font-size: 1.3vw;
+  font-family: heading;
+  font-weight: 650;
+}
+.hero h1{
+  font-size: 5.5vw;
+  font-family: heading;
+  font-weight: 500;
+  line-height: 5.4vw;
+}
+.hero p{
+  font-size: 1.6vw;
+}
+
+/* ......Scroller ...... */
+.scrollerContainer{
+  display: flex;
+  overflow-x:hidden ;
+  gap: 26px;
+  flex-wrap: nowrap;
+}
+.scroller{
+  width: fit-content;
+  flex-shrink: 0;
+  height: 59vh;
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;
+  padding: 0.5vw;
+  overflow: hidden;
+  animation: anime;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.scroller .elem{
+  flex-shrink: 0;
+  width: 22vw;
+  height: 100%;
+  background-color: yellow;
+  border-radius: 3vw;
+  overflow: hidden;
+  position: relative;
+}
+.overlay{
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw  1.2vw;
+  color: white;
+  font-weight: 500;
+}
+.overlay p{
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.overlay div{
+  margin-top: 1.7vw;
+}
+.overlay span{
+  padding: 0.5vw 1vw;
+  border: 0.5px solid white;
+  font-size: 1vw;
+  border-radius: 3vw;
+}
+@keyframes anime {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(-100% - 30px));
+  }
+}
+.scroller .elem img, .scroller .elem video{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%; 
+}
+/* Explore Page  */
+section{
+  width: 100%;
+  /* min-height: 100vh;   */
+  padding: 4vw 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section h2{
+  font-size: 4vw;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 4vw;
+}
+section .box{
+  width: 26vw;
+  height: 25vw;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 12px;
+
+}
+.hover{
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 254, 254, 0),rgb(2, 2, 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 1.2vw 0.2vw 1.2vw;
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+section .box .boxImg:hover .hover{
+  opacity: 1;
+}
+.hover h6{
+  font-size: 1.52vw;
+  color: white;
+  font-weight: 100;
+}
+.hover i{
+  background-color: white ;
+  padding: 10px 12px;
+  border-radius: 50%;
+}
+section .box .boxImg{
+  width: 100%;
+  height: 85%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+section .box .boxImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+section .box .boxFooter{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4e4e4e;
+}
+section .box .boxFooter img{
+  width: 1.8vw;
+  border-radius: 50%;
+}
+.boxFooter i{
+  font-size: 1.1vw;
+}
+section .box .boxFooter p{
+  font-size: 1vw;
+  color: black;
+}
+#pro{
+  background-color: #828282;
+  color: white;
+  font-size: 1vw;
+  padding: 0.5vw;
+  border-radius: 12px;
+}
+#explore{
+  font-size: 1.1vw;
+  padding: 1.2vw 1.8vw;
+  border-radius: 2vw;
+  border: 2px solid black;
+  background-color: transparent;
+  margin-top: 2vw;
+}
+
+/* ......Joining Section ......  */
+.join{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFDA79;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+.join h2{ 
+  font-family: heading;
+  font-size: 5vw;
+  margin: 0;
+  line-height: 5.5vw;
+}
+.join p{
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: #393939;
+  line-height: 3vw;
+
+}
+.join .btns{
+  gap: 1.5vw;
+  display: flex;
+}
+.join .btns button{
+  width: 13vw;
+  height: 4.5vw;
+  background-color: #0D0C22;
+  color: white;
+  border: none;
+  border-radius: 3vw;
+  font-weight: 600;
+  font-size: 1.2vw;
+}
+.join .btns button:last-child{
+  background-color: white;
+  color: black;
+}
+.join h6{
+  font-size: 1.6vw;
+  font-weight: 300;
+  margin-top: 1.5vw;
+  color: #393939;
+}
+.join h6 span{
+  text-decoration: underline;
+}
+/* ......Footer ....  */
+.footerScroller{
+  width: 100%;
+  height: 40vh;
+  padding: 1.5vw;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  overflow: hidden;
+}
+.wrapper{
+  width:fit-content  ;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  flex-shrink: 0;
+  animation-name: marquee;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes marquee {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(-100% - 34px));
+  }
+}
+.wrapperContainer{
+  width: 20vw;
+  height: 100%;
+border-radius: 20px;
+overflow: hidden;
+
+}
+.wrapperContainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+footer{
+  width: 100%;
+  height: 35vh;
+  margin-top: 2vw;
+  padding: 2vw 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-part1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.footer-part1 img{
+  height: 5vw;
+  margin-top: -10px;
+}
+.footer-part1 .icons i{
+  font-size: 1.2vw;
+  
+}
+.footer-part1 div{
+  display: flex;
+  gap: 2.4vw;
+  font-weight: 600;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-part1 div a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.footer-part2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-part2 div{
+  display: flex;
+  gap: 1.2vw;
+  color: #828282;
+}
