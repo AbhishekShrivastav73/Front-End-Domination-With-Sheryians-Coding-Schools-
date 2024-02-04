@@ -81,6 +81,7 @@ Master Tailwind CSS in a single session! Dive into a comprehensive guide coverin
 
 ## Extras 
 Created Paytm Clone for Practicing Tailwind CSS. This is not included in Course.
+
 <img width="949" alt="Screenshot 2024-02-04 233014" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/8f90432d-0c60-4be1-a08a-bfd886c57091">
 
 
