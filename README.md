@@ -79,6 +79,11 @@ Project Link - https://abhishekshrivastav73.github.io/Dribbble-Clone/
 
 Master Tailwind CSS in a single session! Dive into a comprehensive guide covering the entire spectrum of Tailwind CSS. Elevate your skills and streamline your workflow with this powerful utility-first framework.
 
+## Extras 
+Created Paytm Clone for Practicing Tailwind CSS. This is not included in Course.
+<img width="949" alt="Screenshot 2024-02-04 233014" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/8f90432d-0c60-4be1-a08a-bfd886c57091">
+
+
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
 
