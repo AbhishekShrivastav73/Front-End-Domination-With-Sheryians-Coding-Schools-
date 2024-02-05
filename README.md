@@ -149,6 +149,15 @@ Master advanced JavaScript concepts in a single session! Dive into an intensive 
 
 -call apply bind
 
+--
+const evt = new Event('chacha');
+
+let btn = document.querySelector('#btn');
+
+btn.addEventListener('chacha',function(){
+    console.log('Chacha vala event run hogya');
+})
+--
 
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
