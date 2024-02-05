@@ -133,6 +133,74 @@ JavaScript is a versatile and essential programming language for web development
 
 Master advanced JavaScript concepts in a single session! Dive into an intensive guide covering the breadth of advanced JavaScript topics. Elevate your skills and deepen your understanding of complex JavaScript functionalities.
 
+-Understanding this
+```
+
+// Global scope 
+// Global scope mtlb kisi bhi braces k andar code na hona
+
+console.log(this); // Window
+
+// in Function 
+(function(){
+    console.log(this); // Window
+})()
+
+// In method - Object 
+
+// method-- Object k andar jab koi function h usko method bolte hai 
+
+let obj = {
+    name : 'Lucifer',
+    default : function(){
+        console.log(this); // Returns object
+    }
+}
+
+obj.default();
+
+let obj2 = {
+    title : {
+        age :22,
+        head : function(){
+            console.log(this); // Returns the object jisme woh bana hai
+        }
+    }
+}
+
+obj2.title.head();
+
+// Function inside method (es5)
+
+let user = {
+    sayName : function(){
+        console.log(this); // Ye object return kr rha hai 
+        function childFnc(){
+            console.log(this); // ye window return kr rha hai, to isse koi object ki value nahi access kr skte hai
+        }
+
+        childFnc()
+    }
+}
+
+user.sayName() // Returns Window
+
+// functions inside method (es6) - object
+// es6 function == arrow function 
+
+let userDetails = {
+    name : function(){
+        let child =()=>{
+            console.log(this); //returns object
+        }
+
+        child()
+    }
+}
+userDetails.name()
+
+```
+
 -Prototypal Inheritance
 
 -Closures
@@ -142,8 +210,6 @@ Master advanced JavaScript concepts in a single session! Dive into an intensive 
 -Higher-Order Functions
 
 -Error Handling (try...catch blocks)
-
--Understanding this
 
 -call apply bind
 
