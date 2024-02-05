@@ -197,7 +197,15 @@ let userDetails = {
         child()
     }
 }
-userDetails.name()
+userDetails.name();
+
+// Value of this in event listener 
+
+document.querySelector('button').addEventListener('click',function(){
+    console.log(this);// issme this refer krega uss element ko jisko select kr rakha hai
+    this.style.backgroundColor = "cyan"
+    this.style.color = "white"
+})
 
 ```
 
