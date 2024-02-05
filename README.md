@@ -84,6 +84,71 @@ Created Paytm Clone for Practicing Tailwind CSS. This is not included in Course.
 
 <img width="949" alt="Screenshot 2024-02-04 233014" src="https://github.com/AbhishekShrivastav73/Front-End-Domination---With-Sheryians-Coding-Schools-/assets/147899930/8f90432d-0c60-4be1-a08a-bfd886c57091">
 
+# Javascript
+## Javascript : Everything About Javascript 
+
+JavaScript is a versatile and essential programming language for web development. This topic serves as your entry point into the world of JavaScript, providing an overview of its role in web development and its significance in creating interactive web pages.
+
+-JS the language
+
+-JS Developer - breiden eich
+
+-Managed by ECMA
+
+-JS the DOM - creating
+
+-Basics
+
+-Error check in console
+
+-Inbult features
+
+-variables constants
+
+-compilers & interpreters
+
+-window types
+
+-conditionals loops
+
+-functions return
+
+-undefined not defined null
+
+-arrays objects questions
+
+-prototypes prototypal inheritance
+
+-asynchronous synchronous js
+
+-es6 climax -questions
+
+-miscellaneous switch case and ternary do-while forin forof
+
+-interview prep
+
+-call apply bind this prototypal inheritance
+
+## Advanced Javascript : God Level JS
+
+Master advanced JavaScript concepts in a single session! Dive into an intensive guide covering the breadth of advanced JavaScript topics. Elevate your skills and deepen your understanding of complex JavaScript functionalities.
+
+-Prototypal Inheritance
+
+-Closures
+
+-Event Delegation
+
+-Higher-Order Functions
+
+-Error Handling (try...catch blocks)
+
+-Custom Events
+
+-Understanding this
+
+-call apply bind
+
 
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
