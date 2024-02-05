@@ -143,13 +143,12 @@ Master advanced JavaScript concepts in a single session! Dive into an intensive 
 
 -Error Handling (try...catch blocks)
 
--Custom Events
-
 -Understanding this
 
 -call apply bind
 
---
+-Custom Events - Below are steps to Create a Custom Event
+```
 const evt = new Event('chacha');
 
 let btn = document.querySelector('#btn');
@@ -157,7 +156,10 @@ let btn = document.querySelector('#btn');
 btn.addEventListener('chacha',function(){
     console.log('Chacha vala event run hogya');
 })
---
+// to Run event 
+ 
+btn.dispatchEvent(evt)
+```
 
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
