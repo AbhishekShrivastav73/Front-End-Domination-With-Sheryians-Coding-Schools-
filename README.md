@@ -238,6 +238,8 @@ btn.dispatchEvent(evt)
 
 Unlocking Asynchronous JavaScript: Navigate the world of async programming. Understand promises, async/await, and callbacks, mastering the art of handling asynchronous tasks in JavaScript.
 
+# JS Animation - DOM Functionality Adding Interactivity 
+
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
 
