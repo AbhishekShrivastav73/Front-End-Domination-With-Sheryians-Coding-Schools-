@@ -237,6 +237,12 @@ btn.dispatchEvent(evt)
 # Asynchronous Javascript
 
 Unlocking Asynchronous JavaScript: Navigate the world of async programming. Understand promises, async/await, and callbacks, mastering the art of handling asynchronous tasks in JavaScript.
+Ways to write Asynchronous Code ----------
+     -Set Timeout
+     -Set Interval
+     -Promises
+     -Axois
+     -Fetch API
 
 # JS Animation - DOM Functionality Adding Interactivity 
 
