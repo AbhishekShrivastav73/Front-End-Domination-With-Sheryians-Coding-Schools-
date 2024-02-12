@@ -246,7 +246,84 @@ Ways to write Asynchronous Code
      -Axois
      -Fetch API
 
+- setTimeout
+
+      setTimeout(() => {
+      console.log("Timeout runs !!!");
+
+      }, 1000);
+
+- setInterval
+
+      setInterval(() => {
+      console.log("Interval runs !!!");
+
+      }, 1000);
+
+- Fetch API
+
+      fetch("https://randomuser.me/api")
+      .then((data) => data.json())
+      .then((res) => console.log(res));
+
+- Axios (or other HTTP libraries)
+
+  - use CDN for using axios
+
+        axios
+        .get("https://randomuser.me/api")
+        .then((res) => console.log(res.data.results[0]));
+
+- callbacks
+- Promises
+- Async/Await
+
+## More Topics
+
+- Event Loop
+- Callbacks vs Promises vs Async/Await
+- Generators
+- Error Handling in Asynchronous Code
+- Web Workers
+- AJAX
+
+
 # JS Animation - DOM Functionality Adding Interactivity 
+JavaScript animations are a dynamic way to bring life and interactivity to your web projects. This topic serves as your introduction to the world of JavaScript animations, explaining their importance and how they can enhance user experiences on your website.
+
+-DOM
+
+-DOM Manipulation
+
+-Accessing Elements:
+
+     document.querySelector()
+
+-Modifying Elements:
+
+     innerHTMl, textContent
+
+-Manipulating Styles and Classes:
+
+      style
+      classList
+
+-Creating and Deleting Elements:
+
+    createElement()
+    appendChild()
+    removeChild()
+
+-Event Handling:
+
+    addEventListener()
+
+-Event Object
+
+# JS Tasks - Mastering practical development challenges
+Embark on mastery! Join 'Introduction to JS Practice Like Hell Series' to dive into intense JavaScript practice sessions. Level up your skills with hands-on challenges, solidifying your expertise in JavaScript programming.
+
+1. Create an HTML page with a button. When the button is clicked, change the text of a paragraph element.
 
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
