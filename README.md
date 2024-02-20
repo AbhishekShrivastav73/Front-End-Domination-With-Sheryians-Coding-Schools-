@@ -334,6 +334,54 @@ Embark on mastery! Join 'Introduction to JS Practice Like Hell Series' to dive i
 9. Build a character counter for a text area or input field, which updates real-time as the user types and enforces a character limit.
 10. Show a progress bar which shows how much page has been scrolled.
 
+## JS Tasks - Mastering practical development challenges
+
+Embark on mastery! Join 'Introduction to JS Practice Like Hell Series' to dive into intense JavaScript practice sessions. Level up your skills with hands-on challenges, solidifying your expertise in JavaScript programming.
+
+1. Create an HTML page with a button. When the button is clicked, change the text of a paragraph element.
+
+![ezgif com-video-to-gif](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/46c90887-f663-4ae2-aaa7-a8d6c1af4415)
+
+2. Create a page with two images and a button. When the button is clicked, swap the source attribute of the images.
+
+![ezgif com-video-to-gif (1)](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/4cd74d3e-294b-4cd9-affb-cae83938d2c1)
+
+3. Create a form with input fields and a submit button. Use JavaScript to validate the form and display an error message if the input is invalid.
+
+![ezgif com-video-to-gif (2)](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/0f789aee-a54c-403b-acdf-4058e7bfe604)
+
+4. Create an unordered list. Allow users to add and remove list items dynamically using buttons.
+
+![ezgif com-video-to-gif (3)](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/f6a80fa3-7dab-4398-b0c1-e2b14ec69d6e)
+
+5. Build a countdown timer that starts when a button is clicked and updates the display in real-time.
+
+![ezgif com-video-to-gif (4)](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/b25d549c-f960-4d60-8d01-a2a86d969ecd)
+
+6. Create a tabbed interface where clicking on tabs displays different content sections without page reload.
+
+![ezgif com-video-to-gif (5)](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/0bc7f509-66a8-455e-a108-602e22913696)
+
+7. Display a progress bar that updates in real-time, showing the progress of a task, download, or form submission.
+
+![ezgif com-video-to-gif (6)](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/782cbe27-31a5-4f1e-804d-41b087d470ed)
+
+8. Create a search bar that displays live search results as users type, updating the results without requiring a full page reload.
+
+![ezgif com-video-to-gif](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/a8509be6-df05-44d0-be3c-403075eefd46)
+
+9. Build a character counter for a text area or input field, which updates real-time as the user types and enforces a character limit.
+
+![ezgif com-video-to-gif (8)](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/18b38019-ae94-4a91-adae-2f70847ae44e)
+
+10. Show a progress bar which shows how much page has been scrolled.
+
+![ezgif com-video-to-gif (9)](https://github.com/Lucky-Kashyap/Front-End-Domination-Create-Anything-with-Code/assets/88204554/b18db4d6-4b20-4428-ba28-f919aa5253e8)
+
+### GSAP, ScrollTrigger, Locomotive - Fun Stuff
+
+This introductory topic sets the stage for an exciting journey into advanced web animation techniques. GSAP (GreenSock Animation Platform), ScrollTrigger, Locomotive, and other tools are introduced as powerful resources for creating dynamic and engaging web animations.
+
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
 
