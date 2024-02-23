@@ -1,0 +1,44 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body,html {
+  font-family: 'Arial', sans-serif;
+  height : 100%;
+  width: 100%;
+}
+
+/* Add your own styles below this line */
+.page1{
+    width: 100%;
+    height: 100vh;
+    background: rgb(252, 155, 155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    background: rgb(193, 108, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    background: rgb(194, 93, 93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background: lightskyblue;
+}

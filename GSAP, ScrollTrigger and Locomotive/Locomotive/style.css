@@ -1,0 +1,46 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body,html {
+  font-family: 'Arial', sans-serif;
+  height : 100%;
+  width: 100%;
+}
+
+/* Add your own styles below this line */
+.page1{
+    width: 100%;
+    height: 100vh;
+    background: lightgoldenrodyellow;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    background: rgb(202, 231, 142);
+    position: relative;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    background: rgb(192, 192, 86);
+}
+.imgContainer{
+    height: 100%;
+    background: red;
+    width: 30%;
+    position: absolute;
+    left: 50% ;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.6;
+}
