@@ -1,0 +1,35 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body,html {
+  font-family: 'Arial', sans-serif;
+  height : 100%;
+  width: 100%;
+}
+
+/* Add your own styles below this line */
+#page1{
+    width: 100%;
+    height: 100vh;
+    background: antiquewhite;
+}
+#page2,#page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page2 img{
+    height: 20%;
+    width: 20%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
