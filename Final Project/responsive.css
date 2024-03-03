@@ -1,0 +1,174 @@
+@media (max-width : 640px) {
+    /* #wrapper{
+       margin: 6vw 0 0 0;
+    } */
+    #loader{
+        width: 100%;
+        height: 100vh;
+    }
+    .loaderContent{
+        font-size: 4vw;
+    }
+    .timer h2{
+        font-size: 10vw;
+    }
+    .heroContainer{
+        height: 50vh;
+        padding-top: 8vw;
+    }
+    .heroContainer p{
+        display: none;
+    }
+    .logos{
+        width: 100%;
+    }
+    .svgs{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heroContainer nav {
+        padding: 1.5vw 4vw;
+        margin-bottom: 7vw;
+        font-size: 7vw;
+      }
+      .heroContainer nav .menus{
+        display: none;
+      }
+      #videoSection{
+        height: 50vh;
+      }
+      .videoContainer{
+        height: 100%;
+        width: 100%;
+      }
+      .heroContent h2{
+        font-size: 12vw;
+      }
+      .heroContent{
+        height: 8vh;
+        /* margin-top: 6vw; */
+      }
+      .projectContainer{
+        flex-direction: column;
+      }
+      .parentImg{
+        width: 100%;
+      }
+      .parentImg .imgContainer{
+        width: 100%;
+      }
+      .imgContainer{
+        width: 100%;
+      }
+      .imgCircle{
+        display: none;
+      }
+      .projectContainer:nth-child(2){
+        width: 100%;
+      }
+      #projects{
+        height: fit-content;
+      }
+      .imgContainer img{
+        width: 100%;
+      }
+      /* .projectContent{
+        width: 90%;
+      } */
+      .projectContent h2{
+        font-size: 12vw;
+      }
+      .allProjects{
+        width: 35vw;
+        height: 35vw;
+        margin-top: 7vw;
+      }
+      /* .parentImg h3{
+        font-size: 6vw;
+      } */
+      .imgSections{
+        flex-direction: column;
+      }
+      .projectContainer .parentImg:nth-child(2n){
+        height: 90vh;
+        width: 100%;
+      }
+      .projectContainer .parentImg:nth-child(2n) .imgContainer{
+        /* background: red; */
+        height: 80vh;
+        width: 100%;
+      }
+      #about {
+        min-height: fit-content;
+        margin: 0;
+
+      }
+      #aboutContent {
+        width: 90%;
+        /* min-height: 70vh; */
+        margin: 4vw;
+        /* background: yellow; */
+        position: relative;
+      }
+      #aboutContent .mainText {
+        font-size: 5.5vw;
+        width: 100%;
+        margin: 5vw 0;
+      }
+      .texts p {
+        width: 100%;
+        font-size: 4.2vw;
+        margin:2vw 0;
+      }
+      .table {
+        width: 100%;
+        height: 80vh;
+        background: #3f7df4;
+        padding: 2.3vw;
+        position: initial;
+        margin-top: 2vw;
+      }
+      .rows h4 {
+        font-size: 6vw;
+      }
+      .rows p {
+        font-size: 3.1vw;
+        width: 50%;
+        /* text-align: end; */
+      }
+      .workContent h6 {
+        font-size: 6.2vw;
+        font-weight: 300;
+      }
+      .elem h1{
+        font-size: 12vw;
+      }
+      .elem2 h1{
+        font-size: 12vw;
+      }
+      .footerContainer h1{
+        font-size: 12vw
+    }
+    .linksSection{
+        height: fit-content;
+    }
+    .footerContainer{
+        width: 100%;
+        margin-right: 0;
+    }
+    .linksSection div h5{
+        font-size: 8vw;
+    }
+    .linksSection{
+        flex-direction: column;
+        gap: 4vw;
+    }
+    .linksSection div ul li{
+        font-size: 5vw;
+    }
+    .linksSection div p{
+        font-size: 5vw;
+    }
+}

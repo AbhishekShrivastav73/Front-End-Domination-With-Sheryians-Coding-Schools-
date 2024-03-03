@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obys Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="https://obys.agency/wp-content/themes/obys/images/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+
+  <body>
+    <div id="loader">
+        <div>
+            <div class="loaderContent">
+                <div class="timer">
+                    <h2 id="time">0</h2>
+                    <h2> - 100</h2>
+                </div>
+                <h1>Your</h1>
+            </div>
+            <div class="loaderContent">
+                <h1>Web Experience</h1>
+            </div>
+            <div class="loaderContent">
+                <h1>is loading right</h1>
+                <div class="blink">
+                    <h2>NOW</h2>
+                </div>
+            </div>
+            <div class="waiting">
+                <h3>Please wait <br>
+                a few seconds</h3>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper" data-scroll-container>
+      <div class="heroContainer" data-scroll data-scroll-speed="1.5">
+        <nav>
+          <div class="logos">
+            <div class="svgs">
+              <svg
+                class="menu-opener__square"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <rect y="10" width="2" height="2" fill="currentColor"></rect>
+                <rect y="5" width="2" height="2" fill="currentColor"></rect>
+                <rect width="2" height="2" fill="currentColor"></rect>
+                <rect
+                  x="5"
+                  y="10"
+                  width="2"
+                  height="2"
+                  fill="currentColor"
+                ></rect>
+                <rect
+                  x="5"
+                  y="5"
+                  width="2"
+                  height="2"
+                  fill="currentColor"
+                ></rect>
+                <rect x="5" width="2" height="2" fill="currentColor"></rect>
+                <rect
+                  x="10"
+                  y="10"
+                  width="2"
+                  height="2"
+                  fill="currentColor"
+                ></rect>
+                <rect
+                  x="10"
+                  y="5"
+                  width="2"
+                  height="2"
+                  fill="currentColor"
+                ></rect>
+                <rect x="10" width="2" height="2" fill="currentColor"></rect>
+              </svg>
+              <svg
+                class="brand__svg"
+                width="71"
+                height="27"
+                viewBox="0 0 71 27"
+              >
+                <path
+                  d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M65.7937 8.96329C65.7937 8.04398 66.4826 7.35449 67.4012 7.35449C68.3198 7.35449 69.0087 8.04398 69.0087 8.96329C69.0087 9.88261 68.3198 10.5721 67.4012 10.5721C66.4826 10.5721 65.7937 9.88261 65.7937 8.96329Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M59.019 18.3861C59.019 17.4668 59.708 16.7773 60.6266 16.7773C61.5451 16.7773 62.2341 17.4668 62.2341 18.3861C62.2341 19.3055 61.5451 19.9949 60.6266 19.9949C59.8228 19.9949 59.019 19.3055 59.019 18.3861Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M41.3365 9.88276C40.5327 8.27396 39.6142 7.8143 39.04 7.58447H46.3887C45.9294 7.8143 45.0108 8.04413 45.0108 8.96344C45.0108 9.19327 45.1257 9.65293 45.3553 10.1126L48.3407 16.6627L46.5035 20.225L41.3365 9.88276Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M51.8998 9.30819C51.8998 8.04413 50.9812 7.69939 50.2922 7.58447H54.6555C53.8517 7.8143 52.8183 8.27396 51.7849 10.1126C51.8998 9.88276 51.8998 9.65293 51.8998 9.30819Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M66.7122 17.9266C66.7122 16.2029 65.2195 15.6283 63.0378 14.5941C60.8562 13.5599 59.019 12.7555 59.019 10.8019C59.019 8.73348 60.971 7.12468 64.1861 7.00977C63.1527 7.23959 62.3489 8.15891 62.3489 9.42296C62.3489 10.9168 63.612 11.4914 65.9084 12.5256C68.2049 13.5599 70.2717 14.4792 70.2717 16.6626C70.2717 19.1907 67.4011 20.3398 64.6454 20.4547C65.9084 20.2249 66.7122 19.1907 66.7122 17.9266Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M21.0129 2.64303C21.0129 1.6088 20.3239 0.919313 19.2905 0.689485L24.4576 0V20.3398C24.4576 20.3398 22.6204 20.4547 20.8981 21.8337V2.64303H21.0129Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M34.6764 14.0195C34.6764 10.4572 31.691 7.58432 27.9019 7.35449C30.1983 7.69923 30.8873 11.4914 30.8873 14.0195C30.8873 16.5476 30.1983 20.2249 27.9019 20.6845C31.8058 20.4547 34.6764 17.5819 34.6764 14.0195Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M14.9269 14.0195C14.9269 10.4572 11.9415 7.58432 8.15234 7.35449C10.4488 7.69923 11.1377 11.4914 11.1377 14.0195C11.1377 16.5476 10.4488 20.2249 8.15234 20.6845C11.9415 20.4547 14.9269 17.5819 14.9269 14.0195Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M0 14.0195C0 10.4572 2.9854 7.58432 6.77456 7.35449C4.4781 7.69923 3.78916 11.4914 3.78916 14.0195C3.78916 16.5476 4.4781 20.2249 6.77456 20.6845C2.9854 20.4547 0 17.5819 0 14.0195Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <p>Obys-<br />Creative<br />Design<br />Agency</p>
+          </div>
+          <div class="menus">
+            <a href="#">Works</a>
+            <a href="#">About</a>
+            <a href="#">Contacts</a>
+          </div>
+        </nav>
+        <div class="mainContainer">
+          <div class="heroContent" >
+            <h2>WE DESIGN</h2>
+          </div>
+          <div class="heroContent">
+            <h2>UNIQUE</h2>
+          </div>
+          <div class="heroContent" id="hero3">
+            <h2><u>WEB</u>/<u>GRAPHIC</u></h2>
+          </div>
+          <div class="heroContent">
+            <h2>EXPERIENCE</h2>
+          </div>
+        </div>
+        
+        <img id="flags" src="https://obys.agency/wp-content/uploads/2022/03/Flag.jpg" alt="">
+      </div>
+      <section id="videoSection" >
+        <div class="videoContainer" data-scroll data-scroll-speed="-1">
+          <div id="videoCursor">
+            <i class="ri-play-mini-fill"></i>
+          </div>
+          <img
+            src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg"
+            alt=""
+          />
+          <video
+           loop
+            src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"
+          ></video>
+        </div>
+      </section>
+      <section id="projects" data-scroll data-scroll-speed="1.5">
+        <div class="projectContent">
+          <h2>OUR PROJECTS</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="projectContainer">
+          <div class="parentImg">
+            <h3>OLGA PRUDKA</h3>
+            <div class="imgContainer">
+              <img src="./assets/img1-1.jpg" alt="">
+              <img src="./assets/img1-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="parentImg">
+            <h3>OLGA</h3>
+            <div class="imgContainer">
+              <img src="./assets/img2-1.jpg" alt="">
+              <img src="./assets/img2-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="imgCircle">
+            <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+              <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"></path></svg>
+              <div class="innerCircle">
+                <p>We are thrilled to have you on board. <br>We Hope you enjoy our projects.❤️</p>
+              </div>
+          </div>
+          <div class="imgCircle" id="circle2">
+            <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+              <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"></path></svg>
+              <div class="innerCircle">
+                <p>It will make you WOW! 😉</p>
+              </div>
+          </div>
+          <div class="parentImg">
+            <h3>OCHI</h3>
+            <div class="imgContainer">
+              <img src="./assets/img3-1.jpg" alt="">
+              <img src="./assets/img3-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="parentImg">
+            <h3>DAVID LAXER</h3>
+            <div class="imgContainer">
+              <img src="./assets/img4-1.jpg" alt="">
+              <img src="./assets/img4-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="parentImg">
+            <h3>DAVID LAXER</h3>
+            <div class="imgContainer">
+              <img src="./assets/img2-1.jpg" alt="">
+              <img src="./assets/img2-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="imgCircle" id="circle3">
+            <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+              <path d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z" fill="currentColor"></path></svg>
+              <div class="innerCircle">
+                <p>We like its color palette 🎨</p>
+              </div>
+          </div>
+          <div class="parentImg">
+            <h3>DAVID LAXER</h3>
+            <div class="imgContainer">
+              <img src="./assets/img1-1.jpg" alt="">
+              <img src="./assets/img1-2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="allProjects">
+          <h6>All Projects <span>(18)</span></h6>
+        </div>
+      </section>
+      <section id="about" data-scroll data-scroll-speed="1.5">
+        <div id="aboutContent">
+          <h3>ABOUT OBYS</h3>
+          <div class="underline"></div>
+          <p class="mainText">
+            Our agency is about people who love creating, designing and
+            developing wow projects. In the same time we are a boutique agency
+            that is more than the collective. We learn and grow, win and
+            celebrate together.
+          </p>
+          <div class="imgSections">
+            <img
+              src="https://obys.agency/wp-content/uploads/2020/07/content-image01.jpg"
+              alt=""
+            />
+            <div class="texts">
+              <p>
+                We are happy to present our new website and updated version of
+                Obys agency. As before we are open for new projects worldwide!
+              </p>
+              <p>
+                Would you like to have award winning site or unique branding
+                style, please say hi to our manager —info@obys.agency. <br />And
+                we will help you with the pleasure.
+              </p>
+            </div>
+          </div>
+          <div class="table">
+            <div class="rows">
+              <h4>Awwwards x16</h4>
+              <p>SOTM, SOTD and Honrable Mentions</p>
+            </div>
+            <div class="rows">
+              <h4>FWA x11</h4>
+              <p>FWA of The Day</p>
+            </div>
+            <div class="rows">
+              <h4>CSSDA x23</h4>
+              <p>WOTM, WOTD and UI, UX, Innovation</p>
+            </div>
+            <div class="rows">
+              <h4>Behance x16</h4>
+              <p>Interaction, Graphic Design</p>
+            </div>
+            <div class="rows">
+              <h4>The Very Best Of</h4>
+              <p>The very best of, Best OF</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="worksWith" data-scroll data-scroll-speed="1.5">
+        <div class="workContent">
+          <div class="underline"></div>
+          <h6>We work with</h6>
+        </div>
+        <div class="animation">
+          <div class="elem">
+            <h1><span>SPORT</span> - TECHNOLOGY - <span>FASHION</span></h1>
+            <h1><span>SPORT</span> - TECHNOLOGY - <span>FASHION</span></h1>
+          </div>
+          <div class="elem2">
+            <h1>
+              <span>BEAUTY</span> - REAL ESTATE - <span>architecture</span>
+            </h1>
+            <h1>
+              <span>BEAUTY</span> - REAL ESTATE - <span>architecture</span>
+            </h1>
+          </div>
+          <div class="elem">
+            <h1><span>TRAVEL</span> - PARTNER - <span>SCIENCE</span></h1>
+            <h1><span>TRAVEL</span> - PARTNER - <span>SCIENCE</span></h1>
+          </div>
+          <div class="elem2">
+            <h1><span>HOTEL</span> - AUTOMOTIVE - <span>MUSIC</span></h1>
+            <h1><span>HOTEL</span> - AUTOMOTIVE - <span>MUSIC</span></h1>
+          </div>
+        </div>
+      </section>
+        <footer data-scroll data-scroll-speed="1.5">
+            <div class="footerContainer">
+                <h1>LET'S CREATE</h1>
+                <div class="underline"></div>  
+                <div class="linksSection">
+                    <div>
+                        <h5>Socials</h5>
+                        <ul>
+                            <li>Dribble</li>
+                            <li>Behance</li>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Address</h5>
+                        <p>Pushkinska 5 <br>
+                            61057 Kharkiv <br>
+                            Ukraine</p>
+                    </div>
+                    <div>
+                        <h5>Say Hi!!</h5>
+                        <p>info@obys.agency</p>
+                       
+                    </div>
+                </div>
+                <div class="underline"></div>
+                <span>Obys Agency &copy; 2024</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
