@@ -340,6 +340,7 @@ Embark on mastery! Join 'Introduction to JS Practice Like Hell Series' to dive i
 
 This introductory topic sets the stage for an exciting journey into advanced web animation techniques. GSAP (GreenSock Animation Platform), ScrollTrigger, Locomotive, and other tools are introduced as powerful resources for creating dynamic and engaging web animations.
 
+# React JS
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
 
