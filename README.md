@@ -340,7 +340,427 @@ Embark on mastery! Join 'Introduction to JS Practice Like Hell Series' to dive i
 
 This introductory topic sets the stage for an exciting journey into advanced web animation techniques. GSAP (GreenSock Animation Platform), ScrollTrigger, Locomotive, and other tools are introduced as powerful resources for creating dynamic and engaging web animations.
 
+# Final Project - Obys Agency Clone
+
+Embark on our final project—a polished clone of obys.agency, showcasing everything you've learned in the course. We've poured our hearts into making the website and videos as simple as possible, a testament to our dedication and hard work. This website isn't just visually appealing; it's a showcase of seamless design and captivating animations. Dive into six engaging videos, each offering a glimpse behind the scenes. The introduction video sets the tone, giving you a sneak peek into the inspiration. Join me in celebrating the beauty of simplicity and skill in this front-end development masterpiece! 🚀✨
+
+
 # React JS
+- JavaScript Library for creating user interfaces.
+
+
+## Introduction To React JS
+
+Embark on the React JS journey! Discover the essentials in 'Introduction to React JS'. Uncover the basics and get started with this popular JavaScript library for building user interfaces.
+
+- UI Library
+- for solving the real time problem (facebook build this cool library)
+- for notification update on real time basically (2013).
+
+### React JS Theory & History
+
+Understanding React JS: Delve into its theory and historical roots. Explore the foundational aspects and historical development of React JS
+
+- react -> lang X
+- react -> framework X
+- react -> technology X
+
+- react -> library
+
+- facebook - 2013
+
+- 2015 - open source
+
+#### Virtual DOM
+
+- Copy of real DOM
+
+jab websites par khhob sare change hote hai to khoob saara repaint hota hai wo bhi wo elements jo badle bhi nahi, aur ye website ko slow down kar deta hai, is cheej se bhi bachne ke liyein facebook ne react create ki gyi
+
+- likes count, notification count side by side (change/update)
+
+- when ever there is change in UI the DOM repaint or rerender things
+- This is not the case with virtual DOM or with React. React solves this problem of not repaint Those part which was not updated or changed only re render things which are updated.
+
+### React JS - Essentials - Everything you need to learn
+
+Core Foundations of React JS: 'Essentials - Everything You Need to Learn'. Delve into essential components, foundational concepts, and crucial skills required to master React JS in this comprehensive guide
+
+- array objects destructuring import and export
+
+- map filter arrow fncs (implicit return) spread operator
+
+- Copy array using spread operator
+
+        let arr = [1, 2, 3, 4];
+
+        // real copy
+
+        let arr2 = [...arr];
+
+        arr.pop();
+
+        console.log(arr, arr2);
+
+
+        // object copy
+
+        let state = { name: "lucky", age: 23 };
+
+        let stateCopy = { ...state };
+
+        state.name = "HArsh";
+
+        console.log(state, stateCopy);
+
+- Object Destructuring
+
+      let obj = { name: "lucky", age: 23 };
+
+      let { name, age } = obj;
+
+      console.log(name);
+      console.log(age);
+
+- Array Destructuring
+
+        let arr = [12, function () {}];
+
+        let [first, sec] = arr;
+
+        console.log(first);
+        console.log(sec);
+
+- import export
+
+- hum log component banaate hai, component matlab page ka hissaa
+
+- navbar sidebar cart home landing page second page, ab dikkat yeh aati hai har hissa alag alag component hai aur components ko hum log alag alag files mein rakhte hai, to inko last mein jodna bhi padta hai, jodne ke liyein use hota hai import & export
+
+- navbar - export
+
+- sidebar - export
+
+- cart - import navbar sidebar
+
+- main - import navbar
+
+       function Cart() {}
+
+       export default Cart;
+
+       export function Cart(){
+
+       }
+
+        import Cart from "./script";
+        import { Cart } from ".script.js";
+
+- arrow functions
+
+      let sum = (a, b) => a + b;
+
+      console.log(sum(10, 12));
+
+- impicit return
+
+        let value = val=>val+10;
+
+        console.log(value(20));
+
+- map filter
+
+- dono hi array pe chlte hai, aur dono kaa kaam hai array par kuchh perform krna hand "ek naya array return karna"
+
+      let arr = [1, 2, 3, 4, 5];
+
+- map - har element par kuch karo aur naye array mein rakho
+
+      let arr2 = arr.map((item) => item * 10);
+
+      console.log(arr2);
+
+      let state = [11, 22, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14];
+
+      let greaterFive = state.map((elem) => (elem > 5 ? elem + 5 : elem));
+
+      console.log(greaterFive);
+
+- map filter mein ek hi farak hai, map saare bande lautata hai matlab ki count kam nahi hoga, filter bando ko kam kar skta hai
+
+- ek array mein sabhi nums jo ki 5 se bade hai unmein 10 add kro
+
+- jab originl array ka size kam naa hona ho waha map use hota hai
+
+- jab original array ka size kam krna ho toh wha filter use hota hai
+
+- ek array mein se saare wo nums hata do jo ki 5 se chhote hai
+
+- filter
+
+      let arr = [1, 2, 3, 4, 5, 6];
+
+      let filterArr = arr.filter((elem) => elem > 5);
+
+      console.log(filterArr);
+
+### Section 1: System Setup and Basics
+
+Extensions:
+
+- tabnine
+- prettier
+
+Download :
+
+- node js
+- use vite vs create react app
+
+      npm create vite@latest
+
+      vite project : setup
+
+      cd setup
+      npm i
+      npm run dev
+
+#### Understanding JSX
+
+- jsx -> jsx is actually a very similar looking structure like HTMl but with super powers
+
+- jsx sirf dikhta hai HTML ki trah par hota nhi
+
+- It converted into React.createElement
+
+- jsx is very similar to HTML but with superpowers
+
+- conversion to javascript
+
+      <h1>{login ? 'profile':'login'}</h1>
+
+
+      <h1>Hey  {2 + 2}</h1>
+
+      // output Hey 4
+
+#### Making App
+
+- Component
+
+- React "react" when changes occurs
+
+        function App(){
+
+          return (
+            <div>
+            <h1>App Component</h1>
+            </div>
+          )
+        }
+
+- Component is a reusable code
+
+### Section 2: Building Components
+
+- Header
+
+      import React from "react";
+
+        const Header = () => {
+          return (
+            <div>
+              <h1>Header</h1>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Skills</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+              </ul>
+            </div>
+          );
+        };
+
+        export default Header;
+
+- Configure Tailwind CSS
+
+- Creating Card Component
+
+### Section 3: Reusable Components
+
+- Use Array map method.
+
+        const data = ["ajay", "rahul", "sachin", "udesh"];
+
+
+        {data.map((item, index) => (
+        <h1 key={index}>{item}</h1>
+      ))}
+
+- Showing Card With Data
+
+- Create Array of data
+
+      const data = [
+        {
+          image:'',
+          name:'',
+          desc:''
+        }
+      ]
+
+- and use map method to use different data with card.
+
+#### React Fragments
+
+- unnecessary div creation stop
+- Enclosed all elements in one wrapper without creating div or other element use React Fragment
+
+          <>
+          </>
+
+        <React.Fragment>
+
+        </React.Fragment>
+
+### Section 4: Conditional Rendering
+
+- Instock Check
+
+      {item.inStock ? "InStock" : "Out Of Stock"}
+
+- Handling Events:
+
+        <button
+            onClick={() => console.log("download song")}
+          >
+            Download Now
+          </button>
+
+
+
+            // seperatae function
+
+           const handleClick = () => {
+
+  console.log("mouse over event");
+  };
+
+### Section 5: Managing State and Understanding the State Hook
+
+- state variable takes care of react updation
+
+- It will take care of react changes
+
+- state ek data hota hai, react is data ka khayaal rkhta hai, jab bhi ye data change hota hai react page ko update karta hai
+
+- state koi bhi data ho skta hai, jaise ki score = 0
+
+      const [score,setScore] = useState(0);
+
+
+      // onClick par apply krdo
+
+       const handleScore = () => {
+
+          setScore(score + 1);
+       };
+
+- Based on Previous Value
+
+      onClick={() => setVal((prev) => prev + 1)}
+
+- Use object data in useState
+
+        const [data,setData] = useState({name:'Lucky',isBanned:false});
+
+
+        onClick={() => setData({ name: "Divyanshu", isBanned: true })}
+
+        onClick={() => setData({ ...data, isBanned: !data.isBanned })}
+
+#### Section 6 : Mastering the useState() hook
+
+- useState not update synchronously
+
+- add object property to useState
+
+- useState state ko turant update nahi karta, wo useState state ko update karta hai apne hisaab se function completion ke baad to fix performance issue
+
+      const [val, setVal] = useState({ name: "lucky",age: 23 });
+
+      <h1>Name : {val.name}</h1>
+      <h2>Age : {val.age}</h2>
+      <h3>Role : {val.gender}</h3>
+
+      <button
+        className="px-3 py-1 mt-3 bg-red-500 text-md rounded-full"
+        onClick={() => {setVal({ ...val, gender: "Male" })
+
+        console.log(val);
+        }
+
+        }
+      >
+        Click
+      </button>
+
+- Use Array in useState
+
+      {val.map((item, index) => (
+        <h1 key={index}>{item}</h1>
+      ))}
+
+      <button
+        onClick={() => setVal(() => val.filter((item, index) => index != 2))}
+        // onClick={() =>
+        //   setVal(() => {
+        //     return val.filter((item, index) => index != val.length - 1);
+        //   })
+        // }
+        className="px-3 py-1 text-md bg-blue-500 rounded-full text-white"
+      >
+        Change
+      </button>
+
+- Remove even values from an Array
+
+      onClick={() =>
+          setVal(() => val.filter((item, index) => item % 2 !== 0))
+        }
+
+- Arrays Addition
+
+      onClick={() => setVal([...val, 10])}
+
+- Change array of an object
+
+         const [val, setVal] = useState([
+
+            { name: "lucky", age: 23 },
+            { name: "Shivam", age: 34 },
+            { name: "golu", age: 25 },
+        ]);
+
+        onClick={() =>
+          setVal(() =>
+            val.map((item, index) =>
+              item.name === "Shivam" ? { name: "Shivam", age: 55 } : item
+            )
+          )
+        }
+
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
 
