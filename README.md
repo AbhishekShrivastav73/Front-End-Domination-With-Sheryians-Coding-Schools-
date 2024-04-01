@@ -754,17 +754,609 @@ Download :
 
          const [val, setVal] = useState([
 
-            { name: "lucky", age: 23 },
-            { name: "Shivam", age: 34 },
-            { name: "golu", age: 25 },
+            { name: "Abhi", age: 23 },
+            { name: "Aman", age: 34 },
+            { name: "Anush", age: 25 },
         ]);
 
         onClick={() =>
           setVal(() =>
             val.map((item, index) =>
-              item.name === "Shivam" ? { name: "Shivam", age: 55 } : item
+              item.name === "Shivam" ? { name: "Aman", age: 55 } : item
             )
           )
+        }
+
+#### Section 7 : useState() Hooks
+
+- Solve small-small questions
+
+- print bahar jaao if val is false and print mat jao iv val is true
+
+        <p>{data === false ? "BAHAR JAO" : "MAT JAO"}</p>
+
+- Use React icons
+
+      npm i react-icons --save
+
+- switch Images:
+
+      <div className="w-60 relative h-32 flex bg-zinc-500 rounded-md overflow-hidden">
+        <img
+          className={`w-full h-full ${
+            val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"
+          } transition-transform ease-out duration-300 object-cover shrink-0`}
+          src="https://images.unsplash.com/photo-1682685797743-3a7b6b8d8149?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="card"
+        />
+        <img
+          className={`w-full h-full transition-transform ease-out duration-300 ${
+            val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"
+          } object-cover shrink-0`}
+          src="https://images.unsplash.com/photo-1702234867439-bec43ed4e369?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="card"
+        />
+        <span
+          onClick={() => setVal(() => !val)}
+          className="w-10 h-10 bg-[#dadada8b] flex items-center justify-center rounded-full absolute bottom-[0%] left-1/2 -translate-x-[50%] -translate-y-[50%]"
+        >
+          <FaArrowRight size={"1em"} />
+        </span>
+      </div>
+
+#### Section 8 : Passing Data via Props
+
+- Pass Data via prop
+
+- props use hote hai aapke components ko reuable bnane ke liyein consider karo aapke pass ek button hai and aapko us button ko alag alag jagah daalna hai app mein, to aap ek button ek mein baaneyin aur uska data hard coded karne ki jagah parent component se send karde and child component par use kar le
+
+      <Props btn={"Know More"} color="bg-blue-600" />
+      <Props btn={"Learn More"} color="bg-red-600" />
+
+      <button
+        className={`px-3 py-1 ${color} text-zinc-100 text-xs rounded m-2`}
+      >
+        {btn}
+      </button>
+
+- Array of object change via props functions
+
+       const handleFriendsBtn = (index) => {
+          setRealData((prev) => {
+            return prev.map((item, ind) => {
+              if (ind === index) {
+                return { ...item, friends: !item.friends };
+              }
+              return item;
+            });
+          });
+        };
+
+- Dynamic class change
+
+        <button
+          onClick={() => handleFriendsBtn(index)}
+          className={`px-3 mt-4 py-1 text-sm text-white ${
+            friends ? "bg-green-600" : "bg-blue-500"
+          } font-semibold rounded-md`}
+        >
+          {friends ? "Add Friend" : "Friend"}
+          {/* {friends ? "ADD FRIEND" : "Friends"} */}
+        </button>
+
+#### Section 9 : Props and State Exercise
+
+- Create card add build feature Add To favourites
+
+         const [song, setSong] = useState(data);
+         const [favouritesCount, setFavouritesCount] = useState(0);
+
+          const handleFavourites = (index) => {
+            setSong((prev) => {
+              return prev.map((item, indx) => {
+                if (indx === index) {
+                  return { ...item, favourites: !item.favourites };
+                }
+
+                return item;
+              });
+            });
+
+            setFavouritesCount((prev) => prev + 1);
+          };
+
+       <div className="p-10">
+      <Header
+        favouritesCount={favouritesCount}
+        setFavouritesCount={setFavouritesCount}
+      />
+      <div className="w-full h-52 flex gap-20 flex-wrap mt-10 justify-between">
+        {song.map((item, indx) => (
+          <Card song={item} handleFavourites={handleFavourites} index={indx} />
+        ))}
+      </div>
+
+    </div>
+
+##### React Styled Componnets
+
+- CSS Modules - jismein aap kabhi kisi website ka code dekhte ho aur wha par aapko css classes ka naam bada aada teda dikhta hai
+
+- UI library- tailwind css, material UI,bootstrap,Chakra UI
+
+- create file style.module.css
+
+        .a{
+          color:'red';
+        }
+
+#### Section : 10 Form Handling
+
+- Form Handling
+- form basic nature or we can say default nature is to get submmitted but react says no page reload
+- website submit ho jaati hai form submit krne par.
+
+- How react handle things in Form
+- React prevents Form Submission
+
+- use Ref - is trike mein hum har input ko select kar lete hai and unki value tab nikaalte hai jab form submit hota hai
+
+- use ref ke through html input ko select kar skte hai
+
+      const name = useRef(null);
+
+      const password = useRef(null);
+
+      const handleSubmit = (e) => {
+          e.preventDefault();
+          console.log(name.current.value,
+             password.current.value);
+
+      };
+
+- controlled components
+
+          const [username, setName] = useState({ name: "", age: "" });
+
+
+          const handleSubmit = (e) => {
+            e.preventDefault();
+
+            console.log(username);
+          };
+
+          <form action="" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="name"
+              onChange={(e) => setName({ ...username, name: e.target.value })}
+            />
+            <input
+              type="text"
+              placeholder="age"
+              onChange={(e) => setName({ ...username, age: e.target.value })}
+            />
+            <input type="submit" />
+          </form>
+
+- react hook form
+
+- install react-form-hook package
+
+      npm i react-hook-form
+
+      import React from "react";
+      import { useForm } from "react-hook-form";
+
+      const ReactForm = () => {
+        const { register, handleSubmit } = useForm();
+
+        // console.log(register());
+        return (
+          <div>
+            <form action="" onSubmit={handleSubmit((data) => console.log(data))}>
+              <input
+                className="px-3 mt-2 border-2"
+                {...register("name")}
+                type="text"
+                placeholder="name"
+              />{" "}
+              <br />
+              <input
+                className="px-3 mt-2 border-2"
+                {...register("email")}
+                type="email"
+                placeholder="email"
+              />{" "}
+              <br />
+              <input
+                className="px-3 mt-2 border-2"
+                {...register("age")}
+                type="text"
+                placeholder="name"
+              />{" "}
+              <br />
+              <input
+                className="px-3 mt-2 border-2"
+                {...register("color")}
+                type="color"
+                placeholder="email"
+              />{" "}
+              <br />
+              <input
+                className="px-3 mt-2 border-2"
+                {...register("password")}
+                type="password"
+                placeholder="name"
+              />{" "}
+              <br /> <br />
+              <textarea
+                className="px-3 mt-2 border-2"
+                name="comment"
+                {...register("comment")}
+                placeholder="Write your feedback"
+                cols="30"
+                rows="10"
+              ></textarea>{" "}
+              <br /> <br />
+              <input type="submit" />
+            </form>
+          </div>
+        );
+      };
+
+      export default ReactForm;
+
+#### Section 11 : Form Handling Exercise
+
+- Form Handle Exercise
+
+- App - Cards - Card - Form
+
+- Add form Data into Card component
+
+        const [users, setUsers] = useState([]);
+
+        const addFormData = (data) => {
+            setUsers([...users, data]);
+        };
+
+- Reset Input Values
+
+        // provided by react-hook-form
+
+        reset()
+
+- Remove Elements From Card
+
+        const handleRemove = (id) => {
+          setUsers(() => users.filter((item, index) => index != id));
+        };
+
+#### Section 12 : React JS Routing and Beyond
+
+- Configure react router to use react-routing
+
+- React Uses single page approach in application i.e. no page reload after page changes, for this we use react routing.
+
+- To move From one Page to another without reloading the website, so that website is called Web Application (for not reloading whole page).
+
+      npm i react-router-dom
+
+- Wrap Main Container main.jsx
+
+      <BrowserRouter>
+            <App/>
+      </BrowserRouter>
+
+- Create Navbar
+
+       <nav>
+        <Link to="/">Home</Link>
+        <Link to="/user">User</Link>
+        <Link to="/about">Home</Link>
+        <Link to="/services">services</Link>
+      </nav>
+
+      // Implement Routing
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+
+- Use navigate hook for back to particular route
+
+        const navigate = useNavigate();
+
+        const back = () => {
+            navigate("/");
+            // console.log("hey");
+        };
+
+- Use NavLink to active & de-Activate class
+
+      <NavLink
+        style={(e) => {
+          console.log(e);
+        }}
+        to="/"
+      >
+        Home
+      </NavLink>
+
+- Change color three ways :
+
+  - through style
+
+    style={(e) => {
+    return { color: e.isActive ? "tomato" : "" };
+    }}
+
+  - Through className :
+
+        <NavLink
+        className={(e) => {
+          return [
+            e.isActive ? "text-red-300" : "",
+            e.isActive ? "font-semibold text-xl" : "",
+          ].join(" ");
+        }}
+        to="/about"
+
+        >
+
+        About
+
+      </NavLink>
+
+- Inside Child Component
+
+      <NavLink to="/user">
+        {(e) => {
+          return (
+            <span
+              className={[
+                e.isActive ? "text-red-300" : "",
+                e.isActive ? "font-semibold text-xl" : "",
+              ].join(" ")}
+            >
+              User
+            </span>
+          );
+        }}
+        {/* <span>User</span> */}
+      </NavLink>
+
+### Section 14 : How to integrate API in REACT JS
+
+- The concept for connecting frontEnd With Backend is called AJAX (Asynchronous JavaScript XML) & which implements this communication is through fetch/axois.
+
+- API is an communication medium to build relation
+
+- API allow the communication with each other using requests and responses.
+
+- Using FETCH/AXIOS Method we can access third party API.
+
+- Connect frontEnd with Backend through an API
+
+        import axios from "axios";
+        import "./App.css";
+        import { useState } from "react";
+
+        function App() {
+          const [products, setProducts] = useState([]);
+
+          const getProducts = () => {
+            const api = "https://fakestoreapi.com/products";
+
+            axios
+              .get(api)
+              .then((products) => {
+                // console.log(products);
+                setProducts(products.data);
+              })
+              .catch((err) => console.log(err.message));
+          };
+
+          const addProducts = () => {
+            const api = "https://fakestoreapi.com/products";
+
+            axios
+              .post(api, {
+                title: "test product",
+                price: 13.5,
+                description: "lorem ipsum set",
+                image: "https://i.pravatar.cc",
+                category: "electronic",
+              })
+              .then((products) => {
+                console.log(products);
+              })
+              .catch((err) => console.log(err.message));
+          };
+          return (
+            <div className="p-4">
+              <h1>App</h1>
+
+              <button
+                onClick={getProducts}
+                className="px-3 py-2 bg-orange-500 mt-4 rounded-sm text-white text-sm"
+              >
+                Get Products
+              </button>
+              <button
+                onClick={addProducts}
+                className="px-3 py-2 mx-10 bg-orange-500 mt-4 rounded-sm text-white text-sm"
+              >
+                Add Products
+              </button>
+
+              <hr className="my-10" />
+              <ul>
+                {products.length > 0
+                  ? products.map((item, index) => (
+                      <li key={index} className="rounded p-5 mb-2 bg-orange-300">
+                        Product Name: {item.title}
+                      </li>
+                    ))
+                  : "Loading....!!"}
+              </ul>
+            </div>
+          );
+        }
+
+        export default App;
+
+- LifeCycle Method name useEffect in functional Component:(Three Types of LifeCycle Methods)
+
+      - Component Mounting - creation
+      - Component Updating - updation (when useState is Changed or changes in view)
+      - Component UnMounting - deletion/destroy
+
+- Component Creation
+
+      useEffect(()=>{
+        console.log('Component Creation');
+
+        return ()=>{
+          console.log('Component Deletion From DOM');
+        }
+      })
+
+      useEffect(() => {
+        console.log("SErvices Run");
+
+        return () => {
+          console.log("SErvice Destroyed");
+        };
+      });
+
+#### Section 15 : useEffect() on State Change
+
+- Hook - useEffect() on state change
+
+- Refresh : Component Deletion + Component Updation
+
+- Update : Component Deletion + Component Creation
+
+         const [first, setFirst] = useState("This is normal data");
+         const [second, setSecond] = useState("This is very Large Data");
+
+          useEffect(() => {
+            console.log("SErvices Run");
+
+            return () => {
+              console.log("SErvice Destroyed");
+            };
+          }, [second]);
+
+- Call API When component is loaded using useEffect HOOk we call it.
+
+        useEffect(() => {
+          const api = "https://fakestoreapi.com/products";
+
+          axios
+            .get(api)
+            .then((products) => {
+              // console.log(products);
+              setProducts(products.data);
+            })
+            .catch((err) => console.log(err.message));
+        }, []);
+
+- OutSourcing the Code
+
+- writing import axois from 'axios' causes sometimes problem & write this line in 10 20 30 40 .. components is lengthy & create issue for Us
+
+- While requesting to the API - the Header information, cookies,authorization,token, many things generated & for this we have to take of this to not to call an API when other component is added
+
+- Login - profile, timeline , chats enabled
+
+- Call one time & reference call everytime (create one time object).
+
+- Not call axios everytime.
+
+        import axios from "axios";
+
+        // export { axios };
+
+        const instance = axios.create({
+          baseURL: "https://fakestoreapi.com",
+        });
+
+        axios
+        .get("/users")
+        .then((users) => {
+          console.log(users);
+          // setProducts(users.address);
+        })
+        .catch((err) => console.log(err.message));
+
+        export default instance;
+
+#### Section 16 : React Context API
+
+- It solves Prop Drilling Problem
+
+- Prop Drilling means sharing data between one component to another & another to another means parent to child to son
+
+- From Parent to Child Data Pass only .
+
+- Wrap Application via context
+
+- create context & create UserContext
+
+        import React, { createContext, useState } from "react";
+
+        export const UserContext = createContext();
+
+        const Context = (props) => {
+          // console.log(props);
+
+          const [users, setUser] = useState([
+            {
+              id: 0,
+              username: "John Doe",
+              city: "USA",
+            },
+            {
+              id: 1,
+              username: "Lucky",
+              city: "Delhi",
+            },
+            {
+              id: 2,
+              username: "Harsh",
+              city: "Bhopal",
+            },
+          ]);
+
+          return (
+            <>
+              <UserContext.Provider value={{ users, setUser }}>
+                {props.children}
+              </UserContext.Provider>
+            </>
+          );
+        };
+
+        export default Context;
+
+- use data via components
+
+        const { users, setUser } = useContext(UserContext);
+
+- use navigate hook for go back
+
+        const navigate= useNavigate();
+
+        // apply on go back button
+
+        const handleBack =()=>{
+          navigate('/user');
         }
 
 # Created by Abhishek Shrivastav
