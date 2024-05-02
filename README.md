@@ -1360,6 +1360,9 @@ Download :
         }
 
 # ReactJs Project - Refokus
+# Redux (Coming Soon)
+# React Final Project (Soon)
+
 
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
