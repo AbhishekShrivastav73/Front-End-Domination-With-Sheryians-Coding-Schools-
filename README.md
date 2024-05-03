@@ -1360,10 +1360,13 @@ Download :
         }
 
 # ReactJs Project - Refokus
-# Redux (Coming Soon)
-# React Final Project (Soon)
+#### Redux
 
+##### Everything you Need to Know About Redux
 
+- Essential Redux Insights: Gain a comprehensive understanding of Redux. This guide covers everything you need to know about Redux, offering key insights into state management for robust React applications.
+
+# Thanks to Sheryians Coding School For bringing this Course
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
 
