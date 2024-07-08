@@ -5,7 +5,7 @@
 </p>
 
 # Front-End-Domination-With-Sheryians-Coding-Schools.
-Getting Start with Front-End Journey with Sheryians Coding Schools (Front-End Domination : Create any thing with Code).
+Getting Start with Front-End Journey with Sheryians Coding Schools (Front-End Domination : Create any thing with Code)
 
 # Essentials - So you don't fail.
 Embark on an insightful journey as we unravel the intricacies of our learning platform. Navigate uncertainties with proven techniques, ensuring a smooth learning experience. This video serves as your guide, equipping you to confidently resolve doubts and make the most of your educational adventure.
