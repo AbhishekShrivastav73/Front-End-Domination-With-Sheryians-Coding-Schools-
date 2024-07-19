@@ -1368,7 +1368,7 @@ Download :
 - HandsOn in Redux
 
 # Movie App - TMDB Api
-# Animation with react js
+# Animation with react js and framer motion
 # Thanks to Sheryians Coding School For bringing this Course
 # Created by Abhishek Shrivastav
 # Mentor - Harsh Sharma
