@@ -11,7 +11,7 @@ Getting Start with Front-End Journey with Sheryians Coding Schools (Front-End Do
 Embark on an insightful journey as we unravel the intricacies of our learning platform. Navigate uncertainties with proven techniques, ensuring a smooth learning experience. This video serves as your guide, equipping you to confidently resolve doubts and make the most of your educational adventure
 
 # Getting Started With Basics | Installation Guides.
-Dive into the essentials! This video serves as your gateway to the world of programming. From laying the foundation with basics to providing a step-by-step installation guide, it's your go-to resource for a smooth start on your coding journey.
+Dive into the essentials! This video serves as your gateway to the world of programming. From laying the foundation with basics to providing a step-by-step installation guide, it's your go-to resource for a smooth start on your coding journey
 
 # HTML - Making Architecture
 Embark on the HTML adventure! This video introduces you to the building blocks of web development. Uncover the power of HTML as we demystify its essentials, setting the stage for your journey into the fascinating world of coding.
